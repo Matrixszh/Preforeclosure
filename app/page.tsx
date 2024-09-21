@@ -22,6 +22,7 @@ import CountUp from 'react-countup';
 import { Footer } from "@/components/Footer";
 import { useInView } from "react-intersection-observer";
 import { Button_Component } from "@/components/Button_Component";
+import { AboutUs } from "@/components/AboutUs";
 
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
@@ -167,7 +168,9 @@ export default function Home() {
       <section className=" relative bg-black ">
         <HowItWorks/>
       </section>
-
+      <section className=" relative bg-black ">
+        <AboutUs/>
+      </section>
       <section id="reviews" className="scroll-mt-14 min-h-screen relative bg-black flex flex-col lg:gap-[13vh] gap-[12vh]">
       <div className="flex items-center justify-center gap-2 pt-8">
           <div>
