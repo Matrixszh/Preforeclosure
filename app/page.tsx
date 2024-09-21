@@ -65,7 +65,7 @@ export default function Home() {
           <Image
             src={bg_img}
             alt="bg_image"
-            className="opacity-35 h-screen object-cover lg:h-auto"
+            className="opacity-35 h-100% object-cover lg:h-auto"
           />
         </div>
         <Header />
@@ -106,28 +106,19 @@ export default function Home() {
           </div>
         <AboutUs/>
       </section>
-      <section className=" relative bg-black ">
+      <section className=" relative bg-white ">
         <HowItWorks/>
       </section>
-
-      <section id="reviews" className="scroll-mt-14 min-h-screen relative bg-black flex flex-col lg:gap-[13vh] gap-[12vh]">
-      <div className="flex items-center justify-center gap-2 pt-8">
-          <div>
-            <Image src={forward} alt="forward" />
-          </div>
-          <div>
-            <h1 className="text-white lg:text-6xl text-3xl">Customer Reviews</h1>
-          </div>
-        </div>
-        <Reviews/>
-      </section>
+      
       <section className="relative bg-White flex flex-col ">
-      <div className="flex items-center justify-center gap-2 pt-8">
-          <div>
-            <Image src={forward} alt="forward" />
-          </div>
-          <div>
-            <h1 className="text-white lg:text-6xl text-3xl">Brands We Serve</h1>
+      <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
+          <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
+            WHO AM I
+          </p>
+          <div className="flex items-center justify-center">
+            <div className="h-[2px] w-16 bg-black mr-4"></div>
+            <h1 className="text-black text-center text-3xl lg:text-6xl">About Me</h1>
+            <div className="h-[2px] w-16 bg-black ml-4"></div>
           </div>
         </div>
         <Brands/>
@@ -157,18 +148,21 @@ export default function Home() {
           </div>
         
       </section>
-      <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
-      <section className="relative">
-      <div className="flex items-center justify-center gap-2 pt-8">
-          <div>
-            <Image src={forward} alt="forward" />
-          </div>
-          <div>
-            <h1 className="text-black lg:text-6xl text-3xl">FAQs</h1>
+      <section id="reviews" className="scroll-mt-14 min-h-screen relative bg-White flex flex-col lg:gap-[13vh] gap-[12vh]">
+      <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
+          <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
+            WHO AM I
+          </p>
+          <div className="flex items-center justify-center">
+            <div className="h-[2px] w-16 bg-black mr-4"></div>
+            <h1 className="text-black text-center text-3xl lg:text-6xl">About Me</h1>
+            <div className="h-[2px] w-16 bg-black ml-4"></div>
           </div>
         </div>
-        <Faqs/>
+        <Reviews/>
       </section>
+      <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
+
       <Footer/>
       </main>
   );

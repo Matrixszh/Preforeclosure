@@ -49,30 +49,18 @@ const HowItWorks = () => {
   
 
   return (
-      <div className="relative w-full min-h-screen flex flex-col items-center gap-[12vh] bg-black text-white">
-          <div className="flex items-center justify-center gap-2 pt-8 relative z-10">
-            <div>
-              <Image src={forward} alt="forward" />
-            </div>
-            <div>
-              <h1 className="text-white lg:text-6xl text-4xl">How It Works</h1>
-            </div>
+      <div className="relative w-full min-h-screen flex flex-col items-center gap-[12vh] bg-white text-white">
+          <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
+          <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
+            WHO AM I
+          </p>
+          <div className="flex items-center justify-center">
+            <div className="h-[2px] w-16 bg-black mr-4"></div>
+            <h1 className="text-black text-center text-3xl lg:text-6xl">About Me</h1>
+            <div className="h-[2px] w-16 bg-black ml-4"></div>
           </div>
-      <div className="absolute inset-0">
-        <Image
-          src={bg_img2}
-          alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-40"
-        />
         </div>
-          <div className="relative z-10 w-full h-full flex flex-col items-center justify-center lg:justify-start lg:px-[5.313vw]">
-            <div className="flex flex-col items-center text-center py-0">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                Steps to Get Our Services
-              </h2>
-            </div>
+
 
         {/* Slider for mobile devices */}
          <div className="block lg:hidden w-full px-1">
@@ -81,7 +69,7 @@ const HowItWorks = () => {
           return (
              <>     
              
-            <div key={index} className=" flex flex-col  bg-[linear-gradient(93deg,#E60404_0.45%,#800202_74.27%,#850202_99.52%,#820202_99.53%)]  rounded-xl items-center gap-[8vh] lg:gap-[14vh] lg:w-[52vw] lg:h-[60vh] mx-auto pt-10 h-[55vh] w-[80%]">
+            <div key={index} className=" flex flex-col  bg-black  rounded-xl items-center gap-[8vh] lg:gap-[14vh] lg:w-[52vw] lg:h-[60vh] mx-auto pt-10 h-[55vh] w-[80%]">
             <div className="">
                 <h2 className="text-white lg:text-5xl  text-4xl text-center font-bold">{ data.title}</h2>
             </div>
@@ -101,7 +89,7 @@ const HowItWorks = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="w-64 h-80 bg-gradient-to-r from-[#E60404] to-[#850202] m-4 flex flex-col gap-16 pt-5 items-center text-white transition-transform duration-300 hover:scale-105 hover:shadow-lg rounded-xl"
+              className="w-64 h-80 bg-black m-4 flex flex-col gap-16 pt-5 items-center text-white transition-transform duration-300 hover:scale-105 hover:shadow-lg rounded-xl"
             >
               <h2 className="text-6xl font-bold mb-2">{slide.title}</h2>
               <p className="text-center mx-4">{slide.description}</p>
@@ -109,7 +97,7 @@ const HowItWorks = () => {
           ))}
         </div>
       </div>
-    </div>
+    
   );
 };
 
