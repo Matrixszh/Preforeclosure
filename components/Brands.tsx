@@ -5,9 +5,8 @@ import toyota from "../public/toyota.png";
 import honda from "../public/honda.png";
 import mercedes from "../public/mercedes2.png";
 import vw from "../public/Volkswagen.png"
-import audi from "../public/audi.png"
+import audi from "../public/Audi.png"
 import LandRover from "../public/LandRover.png"
-import BMW from "../public/BMW.png"
 import Skoda from "../public/Skoda.png"
 
 interface Brand {
