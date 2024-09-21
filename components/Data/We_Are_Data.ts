@@ -1,6 +1,6 @@
 import eye from "../../public/Eye.png"
 import notepad from "../../public/Notepad.png"
-import people from "../../public/people.png"
+import people from "../../public/People.png"
 
 export const Stats = [
     {
