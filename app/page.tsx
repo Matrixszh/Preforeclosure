@@ -92,85 +92,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex flex-col relative">
-        <div className="bg-black flex flex-col min-h-[30%] md:min-h-[40%] items-center">
-          <div className="flex items-center justify-center gap-2 pt-8 ">
-            <div>
-              <Image src={forward} alt="forward" />
-            </div>
-            <div>
-              <h1 className="text-white lg:text-6xl text-4xl">Services</h1>
-            </div>
-          </div>
-          <Image src={car_large} alt="car small" className="relative top-[5vh] lg:-mt-[5vh] " />
-        </div>
-        <Services />
+      
+      <section className=" relative bg-white ">
+        <AboutUs/>
       </section>
-  <section id="about"  className="scroll-smooth scroll-mt-14 relative min-h-screen flex flex-col">
-    <div className="absolute inset-0">
-      <Image
-        src={about}
-        alt="bg_img"
-        fill
-        className="object-cover"
-      />
-    </div>
-  <div className="relative z-10 flex flex-col lg:gap-[12vh] md:gap-[10vh] gap-[1vh]">
-    <div className="flex items-center justify-center gap-2 pt-8">
-      <div>
-        <Image src={forward} alt="forward" />
-      </div>
-      <div>
-        <h1 className="text-white lg:text-6xl text-4xl">About Us</h1>
-      </div>
-    </div>
-    <div className="flex flex-col items-center w-full px-[5.313vw]">
-      <p className="text-white text-lg md:text-lg text-center px-4 lg:px-0 lg:text-2xl lg:leading-loose leading-loose">
-        At Xcellent Auto Repair, we believe in providing reliable, honest, and transparent services. Our state-of-the-art facility is equipped with the latest technology to diagnose and repair your vehicle efficiently and accurately. Whether you need routine maintenance, complex repairs, or specialized services, we have the expertise to handle it all.
-      </p>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[13vw] place items-center mt-6">
-        {About_data.map((data, index) => (
-          <div key={index} className="flex flex-col items-center gap-2 md:gap-8">
-            <Image src={data.img} alt="images" className="w-14 h-14 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40" />
-            <p className="md:text-2xl text-lg text-white">{data.title}</p>
-          </div>
-        ))}
-        </div>
-      </div>
-      </div>
-    </section>
-    <section className="min-h-screen bg-black flex flex-col gap-4 lg:gap-[16vh] md:gap-16" ref={ref}>
-        <div className="flex items-center justify-center gap-2 pt-8">
-          <div>
-            <Image src={forward} alt="forward" />
-          </div>
-          <div>
-            <h1 className="text-white lg:text-6xl text-4xl">We Are At</h1>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 px-[5.313vw]">
-          {Stats.map((data, index) => (
-            <div key={index} className="flex flex-col items-center gap-6 py-3">
-              <Image src={data.img} alt="img" className="w-12 h-12 lg:w-32 lg:h-32 md:w-24 md:h-24" />
-              <CountUp start={0} end={data.count} delay={0} duration={3.0} useEasing={true} key={inView?1:0}>
-                {({ countUpRef }) => (
-                  <h1 className="text-white md:text-8xl text-4xl font-bold">
-                    <span ref={countUpRef} />
-                  </h1>
-                )}
-              </CountUp>
-              <p className="text-white">{data.title}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section className=" relative bg-black ">
         <HowItWorks/>
       </section>
-      <section className=" relative bg-black ">
-        <AboutUs/>
-      </section>
+
       <section id="reviews" className="scroll-mt-14 min-h-screen relative bg-black flex flex-col lg:gap-[13vh] gap-[12vh]">
       <div className="flex items-center justify-center gap-2 pt-8">
           <div>
