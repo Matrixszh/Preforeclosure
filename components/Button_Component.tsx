@@ -25,7 +25,7 @@ export const Button_Component = () => {
       };
     return (
         <button onClick={handleCall} className="flex items-center justify-center rounded-full lg:w-20 lg:h-20 bg-black border-2 border-white w-10 h-10">
-            <FaPhoneAlt className="text-red-600 lg:text-2xl text-md"/>
+            <FaPhoneAlt className="text-[#AC9552] lg:text-2xl text-md"/>
        </button>
     )
 }

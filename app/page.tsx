@@ -1,24 +1,12 @@
 "use client"
 import Image from "next/image";
 import bg_img from "../public/bg_img.jpg";
-import bg_img2 from "../public/bg_img2.jpeg";
-import bg_img3 from "../public/bg_img3.jpeg";
-import forward from "../public/Forward.png";
-import car_small from "../public/car_small.png";
-import car_large from "../public/car_large.png";
-import logo from "../public/logo.png";
 import React, { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
-import Services from "@/components/Services";
-import about from "../public/about.png";
-import { About_data } from "@/components/Data/About_Data";
-import { Stats } from "@/components/Data/We_Are_Data";
 import HowItWorks from "@/components/HowItWorks";
 import Reviews from "@/components/Reviews";
 import Brands from "@/components/Brands";
 import PopupForm from "@/components/PopupForm";
-import Faqs from "@/components/Faqs";
-import CountUp from 'react-countup';
 import { Footer } from "@/components/Footer";
 import { useInView } from "react-intersection-observer";
 import { Button_Component } from "@/components/Button_Component";
@@ -71,23 +59,23 @@ export default function Home() {
         <Header />
         <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-[250px] shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[40vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-0">
           <div>
-            <h1 className="md:text-6xl text-5xl text-white font-bold lg:text-left text-center">
-              Professional Auto{" "}
-              <span className="bg-[linear-gradient(93deg,#E60404_65.36%,#850202_99.52%)] bg-clip-text text-transparent">
-                Repair
-              </span>{" "}
-              &{" "}
-              <span className="bg-[linear-gradient(93deg,#E60404_65.36%,#850202_99.52%)] bg-clip-text text-transparent">
-                Maintenance
+          <h1 className="md:text-8xl text-5xl text-white font-bold">
+              <span className="bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] bg-clip-text text-transparent">
+                Preforeclosure
               </span>
             </h1>
+            <h2 className="md:text-4xl text-xl text-white font-medium">
+              <span className="bg-white bg-clip-text text-transparent">
+                From Pre-Foreclosures to Profit, Real Estate Starts Here!
+              </span>
+            </h2>
           </div>
           <div className="flex lg:w-auto">
-            <button className="relative overflow-hidden group lg:p-3 p-2 rounded-[10px] text-white font-bold border-2 border-transparent hover:border-[#9E0506] transition-colors duration-300">
+            <button className="relative overflow-hidden group lg:p-3 p-2 rounded-[10px] text-white font-bold border-2 border-transparent hover:border-[#AC9552] transition-colors duration-300">
               <span onClick={openPopup} className="relative z-10 lg:text-xl md:text-lg text-md px-[80px] md:px-[80px] lg:px-0">
                 GET A QUOTE
               </span>
-              <div className="absolute inset-0 bg-[linear-gradient(93deg,#E60404_0.45%,#800202_74.27%,#850202_99.52%,#820202_99.53%)] group-hover:opacity-0 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] group-hover:opacity-0 transition-opacity duration-300"></div>
             </button>
           </div>
         </div>
@@ -113,18 +101,18 @@ export default function Home() {
       <section className="relative bg-White flex flex-col ">
       <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
           <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
-            WHO AM I
+            WHAT ARE WE
           </p>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center py-4">
             <div className="h-[2px] w-16 bg-black mr-4"></div>
-            <h1 className="text-black text-center text-3xl lg:text-6xl">About Me</h1>
+            <h1 className="text-black text-center text-3xl lg:text-6xl">My Company</h1>
             <div className="h-[2px] w-16 bg-black ml-4"></div>
           </div>
         </div>
         <Brands/>
          <div className="flex flex-col gap-8" id="event-content">
           <p
-            className="text-lg lg:text-xl text-justify  md:px-14 px-7 "
+            className="text-lg lg:text-xl text-justify  py-4 md:px-14 px-7 "
             style={{ lineHeight: "1.85" }}
           >
             At the heart of our enterprises is a strong commitment to community
@@ -151,11 +139,11 @@ export default function Home() {
       <section id="reviews" className="scroll-mt-14 min-h-screen relative bg-White flex flex-col lg:gap-[13vh] gap-[12vh]">
       <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
           <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
-            WHO AM I
+          WHERE IDEAS MEET OPPORTUNITIES
           </p>
           <div className="flex items-center justify-center">
             <div className="h-[2px] w-16 bg-black mr-4"></div>
-            <h1 className="text-black text-center text-3xl lg:text-6xl">About Me</h1>
+            <h1 className="text-black text-center text-3xl lg:text-6xl">Chicago Meet Ups</h1>
             <div className="h-[2px] w-16 bg-black ml-4"></div>
           </div>
         </div>

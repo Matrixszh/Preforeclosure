@@ -58,7 +58,7 @@ export const Header = () => {
         <header className={`fixed flex justify-between w-full px-1 md:p-2 max-h-[75px]  z-20 ${isScrolled ? 'bg-black' : 'bg-transparent'} scroll-smooth`}>
           {isMenuOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-60 z-40"
+            className="fixed inset-0 bg-black bg-opacity-60 z-30"
             onClick={toggleMenu}
           ></div>
           )}
@@ -67,14 +67,14 @@ export const Header = () => {
                     alt="bg_image"
           />
             <div className="hidden lg:flex justify-between items-center gap-8">
-                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer"> <a href="#about ">About</a></p>
-                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer"><a href="#reviews">Reviews</a> </p>
-                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer"><a href="#contact">Contact</a></p>
+                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer"> <a href="#about ">About</a></p>
+                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer"><a href="#reviews">Reviews</a> </p>
+                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer"><a href="#contact">Contact</a></p>
             </div>
                 <div className="hidden lg:block">
-                    <button className='relative overflow-hidden group p-3 rounded-[10px] text-white font-bold border-2 border-transparent hover:border-[#9E0506] transition-colors duration-300'>
+                    <button className='relative overflow-hidden group p-3 rounded-[10px] text-white font-bold border-2 border-transparent hover:border-[#AC9552] transition-colors duration-300'>
                         <span onClick={openPopup} className='relative z-10'>BOOK AN APPOINTMENT</span>
-                        <div className='absolute inset-0 bg-[linear-gradient(93deg,#E60404_0.45%,#800202_74.27%,#850202_99.52%,#820202_99.53%)] group-hover:opacity-0 transition-opacity duration-300'></div>
+                        <div className='absolute inset-0 bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] group-hover:opacity-0 transition-opacity duration-300'></div>
                     </button>
                 </div>
           <button
