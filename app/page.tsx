@@ -111,7 +111,7 @@ export default function Home() {
         </div>
         <Reviews/>
       </section>
-      <section className="relative bg-black flex flex-col ">
+      <section className="relative bg-White flex flex-col ">
       <div className="flex items-center justify-center gap-2 pt-8">
           <div>
             <Image src={forward} alt="forward" />
@@ -121,6 +121,31 @@ export default function Home() {
           </div>
         </div>
         <Brands/>
+         <div className="flex flex-col gap-8" id="event-content">
+          <p
+            className="text-lg lg:text-xl text-justify  md:px-14 px-7 "
+            style={{ lineHeight: "1.85" }}
+          >
+            At the heart of our enterprises is a strong commitment to community
+            and collaboration, and this is best exemplified through our dynamic
+            events. Our events are not just gatherings but curated experiences
+            where entrepreneurs, investors, and professionals from various
+            industries come together to share knowledge, forge connections, and
+            explore new opportunities.{" "}
+            <span className="hidden md:flex md:pt-4">
+              Hosted by our Visionary founder, these events focus on empowering
+              individuals to start or build their own business, while showcasing
+              the innovative solutions we offer across a diverse range of
+              industries, including lead generation, real estate wholesaling,
+              marketing, coaching, and more. We invite you to browse through the
+              moments captured at our events, where like-minded individuals
+              engage in insightful discussions, spark new ideas, and lay the
+              foundation for future collaborations. Join us at our next event
+              and become part of this growing, dynamic community.
+            </span>
+          </p>
+          </div>
+        
       </section>
       <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
       <section className="relative">
