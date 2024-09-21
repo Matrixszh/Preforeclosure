@@ -94,6 +94,16 @@ export default function Home() {
       </section>
       
       <section className=" relative bg-white ">
+      <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
+          <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
+            WHO AM I
+          </p>
+          <div className="flex items-center justify-center">
+            <div className="h-[2px] w-16 bg-black mr-4"></div>
+            <h1 className="text-black text-center text-3xl lg:text-6xl">About Me</h1>
+            <div className="h-[2px] w-16 bg-black ml-4"></div>
+          </div>
+          </div>
         <AboutUs/>
       </section>
       <section className=" relative bg-black ">
