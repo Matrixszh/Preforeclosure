@@ -118,7 +118,7 @@ const AppointmentForm = () => {
 
         <button
           type="submit"
-          className="w-full bg-[#D72323] text-white p-2 rounded-xl"
+          className="w-full bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] text-white p-2 rounded-xl"
         >
           Contact Us
         </button>

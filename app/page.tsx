@@ -159,7 +159,7 @@ export default function Home() {
           </p>
           <div className="flex items-center justify-center">
             <div className="h-[2px] w-16 bg-black mr-4"></div>
-            <h1 className="text-black text-center text-3xl lg:text-6xl">Chicago Meet Ups</h1>
+            <h1 className="text-black text-center text-3xl lg:text-6xl">Our Workshops</h1>
             <div className="h-[2px] w-16 bg-black ml-4"></div>
           </div>
         </div>
@@ -168,6 +168,19 @@ export default function Home() {
       <section>
         <Collabs/>
       </section>
+      <section id="reviews" className="scroll-mt-14 min-h-screen relative bg-White flex flex-col lg:gap-[13vh] gap-[12vh]">
+      <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
+          <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
+          WHERE IDEAS MEET OPPORTUNITIES
+          </p>
+          <div className="flex items-center justify-center">
+            <div className="h-[2px] w-16 bg-black mr-4"></div>
+            <h1 className="text-black text-center text-3xl lg:text-6xl">Chicago Meet Ups</h1>
+            <div className="h-[2px] w-16 bg-black ml-4"></div>
+          </div>
+        </div>
+        <AppointmentForm/>
+        </section>
 
       <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
 

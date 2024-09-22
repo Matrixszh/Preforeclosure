@@ -52,7 +52,7 @@ const HowItWorks = () => {
       <div className="relative w-full min-h-screen flex flex-col items-center gap-[12vh] bg-white text-white">
           <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
           <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
-            Read UP
+            READ UP
           </p>
           <div className="flex items-center justify-center">
             <div className="h-[2px] w-16 bg-black mr-4"></div>
