@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import logo from "../public/logo.png"
 import "./globals.css";
-import { Open_Sans } from "next/font/google"
+import { Playfair_Display } from "next/font/google";
 import Head from "next/head";
-const openSans = Open_Sans({ subsets: ['latin'] });
+
+const playfair = Playfair_Display({ subsets: ['latin'] });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={openSans.className}>{children}</body>
+      <body className={playfair.className}>{children}</body>
     </html>
   );
 }

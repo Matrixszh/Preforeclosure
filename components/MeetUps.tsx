@@ -22,13 +22,13 @@ const reviews = [
     image: bg_img,
   },
   {
-    title: "Outstanding Customer Service",
+    title: "Outstanding  Service",
     text: "Outstanding customer service! The team went above and beyond to ensure my vehicle was repaired quickly and correctly.",
     image: bg_img,
   },
 ];
 
-export default function Reviews() {
+export default function MeetUps() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },

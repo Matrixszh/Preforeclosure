@@ -4,8 +4,8 @@ import bg_img from "../public/bg_img.jpg";
 import React, { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import HowItWorks from "@/components/HowItWorks";
-import Reviews from "@/components/Reviews";
-import Brands from "@/components/Brands";
+import Meetups from "@/components/MeetUps";
+import Company from "@/components/Company";
 import PopupForm from "@/components/PopupForm";
 import { Footer } from "@/components/Footer";
 import { useInView } from "react-intersection-observer";
@@ -57,6 +57,7 @@ export default function Home() {
             src={bg_img}
             alt="bg_image"
             className="opacity-35 h-screen object-cover lg:h-auto"
+            style={{ maxHeight: '800px' }}
           />
         </div>
         <Header />
@@ -85,7 +86,8 @@ export default function Home() {
       </section>
       
       <section className=" relative bg-white ">
-      <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
+      <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]" 
+        id="AboutUs">
           <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
             WHO AM I
           </p>
@@ -100,10 +102,9 @@ export default function Home() {
       <section className=" relative bg-white ">
         <HowItWorks/>
       </section>
-      
-      <section className="relative bg-White flex flex-col ">
+      <section className="relative bg-White overflow-hidden ">
       <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
-          <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
+          <p className="text-[#7C640E] text-center text-sm tracking-wider">
             WHAT ARE WE
           </p>
           <div className="flex items-center justify-center py-4">
@@ -112,7 +113,7 @@ export default function Home() {
             <div className="h-[2px] w-16 bg-black ml-4"></div>
           </div>
         </div>
-        <Brands/>
+        <Company/>
          <div className="flex flex-col gap-8" id="event-content">
           <p
             className="text-lg lg:text-xl text-justify  py-4 md:px-14 px-7 "
@@ -139,7 +140,7 @@ export default function Home() {
           </div>
         
       </section>
-      <section id="reviews" className="scroll-mt-14 min-h-screen relative bg-White flex flex-col lg:gap-[13vh] gap-[12vh]">
+      <section id="meetups" className="scroll-mt-14 min-h-screen relative bg-White flex flex-col lg:gap-[13vh] gap-[12vh]">
       <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
           <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
           WHERE IDEAS MEET OPPORTUNITIES
@@ -150,7 +151,7 @@ export default function Home() {
             <div className="h-[2px] w-16 bg-black ml-4"></div>
           </div>
         </div>
-        <Reviews/>
+        <Meetups/>
       </section>
       <section id="reviews" className="scroll-mt-14 min-h-screen relative bg-White flex flex-col lg:gap-[13vh] gap-[12vh]">
       <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
@@ -168,7 +169,7 @@ export default function Home() {
       <section>
         <Collabs/>
       </section>
-      <section id="reviews" className="scroll-mt-14 min-h-screen relative bg-White flex flex-col lg:gap-[13vh] gap-[12vh]">
+      <section id="form" className="scroll-mt-14 min-h-screen relative bg-White flex flex-col lg:gap-[13vh] gap-[12vh]">
       <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
           <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
           WHERE IDEAS MEET OPPORTUNITIES

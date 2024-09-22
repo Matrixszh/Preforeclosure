@@ -65,11 +65,13 @@ export const Header = () => {
           <Image
                     src={logo}
                     alt="bg_image"
+                    height="100"
+                    width="100"
           />
             <div className="hidden lg:flex justify-between items-center gap-8">
-                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer"> <a href="#about ">About</a></p>
-                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer"><a href="#reviews">Reviews</a> </p>
-                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer"><a href="#contact">Contact</a></p>
+                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer"> <a href="#AboutUs ">About</a></p>
+                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer"><a href="#meetups">Meet Ups</a> </p>
+                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer"><a href="#form">Contact</a></p>
             </div>
                 <div className="hidden lg:block">
                     <button className='relative overflow-hidden group p-3 rounded-[10px] text-white font-bold border-2 border-transparent hover:border-[#AC9552] transition-colors duration-300'>
@@ -100,8 +102,8 @@ export const Header = () => {
                 <div className="flex flex-col  justify-between h-full py-[80px]">
                   <div className="flex flex-col gap-8 pl-10">
               
-                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer mb-4"><a onClick={toggleMenu} href="#about ">About</a></p>
-                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer mb-4"><a onClick={toggleMenu} href="#reviews">Reviews</a> </p>
+                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer mb-4"><a onClick={toggleMenu} href="#AboutUs ">About</a></p>
+                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer mb-4"><a onClick={toggleMenu} href="#meetups">Meet Ups</a> </p>
                     <p className="text-white font-bold hover:text-[#e20303] cursor-pointer mb-4"><a onClick={toggleMenu} href="#contact">Contact</a></p>
                   </div>
                   <div className="flex justify-center">
