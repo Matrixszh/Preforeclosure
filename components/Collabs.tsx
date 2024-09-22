@@ -2,10 +2,10 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import bg_image1 from "../public/bg_img.jpg"
-import bg_image2 from "../public/bg_img2.jpeg"
-import bg_image3 from "../public/bg_img3.jpeg"
-import bg_image4 from "../public/events1.jpeg"
+import bg_image1 from "../public/bg_img.jpg";
+import bg_image2 from "../public/bg_img2.jpeg";
+import bg_image3 from "../public/bg_img3.jpeg";
+import bg_image4 from "../public/events1.jpeg";
 import { useSwipeable } from 'react-swipeable';
 
 const images = [
@@ -67,12 +67,12 @@ export default function Collabs() {
 
   return (
     <motion.div
-      className="w-full h-screen flex flex-col justify-center items-center text-center bg-[#1a1a1a] px-4"
+      className="w-full min-h-screen flex flex-col justify-start items-center text-center bg-[#1a1a1a] px-4 pt-8 lg:pt-16"
       animate={{ backgroundColor: currentImage.bgColor }}
       transition={{ duration: 1.5 }}
     >
-
-      <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
+      {/* Title Section */}
+      <div className="flex flex-col items-center gap-2 justify-center mb-8 lg:mb-16">
         <p className="text-[#c2a85b] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
           See What We Do
         </p>
@@ -85,7 +85,7 @@ export default function Collabs() {
         </div>
       </div>
 
-
+      {/* Image and Navigation Dots */}
       <div {...handlers} className="relative mt-8 w-full flex justify-center">
         <Image
           src={currentImage.src}
@@ -107,9 +107,9 @@ export default function Collabs() {
         </div>
       </div>
 
-
+      {/* Description */}
       <motion.p
-        className="text-gray-300 mt-12 text-lg font-light max-w-[600px]"
+        className="text-gray-300 mt-12 text-lg font-light max-w-[600px] px-4"
         key={currentImage.description}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

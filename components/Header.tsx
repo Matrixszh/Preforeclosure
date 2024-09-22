@@ -102,14 +102,14 @@ export const Header = () => {
                 <div className="flex flex-col  justify-between h-full py-[80px]">
                   <div className="flex flex-col gap-8 pl-10">
               
-                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer mb-4"><a onClick={toggleMenu} href="#AboutUs ">About</a></p>
-                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer mb-4"><a onClick={toggleMenu} href="#meetups">Meet Ups</a> </p>
-                    <p className="text-white font-bold hover:text-[#e20303] cursor-pointer mb-4"><a onClick={toggleMenu} href="#contact">Contact</a></p>
+                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer mb-4"><a onClick={toggleMenu} href="#AboutUs ">About</a></p>
+                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer mb-4"><a onClick={toggleMenu} href="#meetups">Meet Ups</a> </p>
+                    <p className="text-white font-bold hover:text-[#AC9552] cursor-pointer mb-4"><a onClick={toggleMenu} href="#contact">Contact</a></p>
                   </div>
                   <div className="flex justify-center">
                     <button onClick={toggleMenu} className='relative overflow-hidden group p-3 rounded-[10px] text-white font-bold border-2 border-transparent hover:border-[#9E0506] transition-colors duration-300 mt-4'>
                         <span onClick={openPopup}  className='relative z-10'>BOOK AN APPOINTMENT</span>
-                        <div className='absolute inset-0 bg-[linear-gradient(93deg,#E60404_0.45%,#800202_74.27%,#850202_99.52%,#820202_99.53%)] group-hover:opacity-0 transition-opacity duration-300'></div>
+                        <div className='absolute inset-0 bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] group-hover:opacity-0 transition-opacity duration-300'></div>
                     </button>
                   </div>
                 </div>
