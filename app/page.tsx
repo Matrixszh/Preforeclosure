@@ -11,6 +11,7 @@ import { Footer } from "@/components/Footer";
 import { useInView } from "react-intersection-observer";
 import { Button_Component } from "@/components/Button_Component";
 import { AboutUs } from "@/components/AboutUs";
+import Collabs from "@/components/Collabs";
 
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
@@ -148,6 +149,9 @@ export default function Home() {
           </div>
         </div>
         <Reviews/>
+      </section>
+      <section>
+        <Collabs/>
       </section>
       <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
 
