@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Nita from "../public/Nita.png";
+import Nita from "../public/Nita.jpg";
 
 
 export const ProfilePhoto = () => {

@@ -1,38 +1,31 @@
 // components/ImageWithDescription.tsx
+// components/ImageWithDescription.tsx
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import bg_image1 from "../public/bg_img.jpg";
-import bg_image2 from "../public/bg_img2.jpeg";
-import bg_image3 from "../public/bg_img3.jpeg";
-import bg_image4 from "../public/events1.jpeg";
 import { useSwipeable } from 'react-swipeable';
 
-const images = [
+// Define the YouTube video URLs with descriptions and background colors
+const videos = [
   {
-    src: bg_image3,
-    description: 'This is the description for Image 1',
+    src: 'https://www.youtube.com/embed/R-BWQAclh4Y?si=6tDUyhd7Khk1dYR', // Example YouTube URL
+    description: "Nita Patel shares her journey from hardship to success as a real estate wholesaler. After overcoming a difficult childhood and abusive marriage, she began wholesaling with $5,000. Through perseverance, door-knocking, and targeting overlooked deals, she built a thriving business, emphasizing self-belief and consistency in achieving success.",
     bgColor: '#000000', // Black
   },
   {
-    src: bg_image2,
-    description: 'This is the description for Image 2',
-    bgColor: '#0C052C', // dark blue
+    src: 'https://www.youtube.com/embed/OjRC4JE8bzc?si=-zUwQ9Bii9wGaEjh', // Example YouTube URL
+    description:"Nita Patel shares her journey from an accounting job to becoming a successful real estate investor in Chicago. She discusses her methods of acquiring deals, including door-knocking, cold-calling, and using lead sources. Nita emphasizes the importance of mindset, persistence, and personal development. She plans to expand into multi-unit properties and group homes for battered women.",
+    bgColor: '#706129', // dark blue
   },
-  {
-    src: bg_image3,
-    description: 'This is the description for Image 3',
-    bgColor: '#706129', // golden
-  },
+  
 ];
 
 export default function Collabs() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentImage, setCurrentImage] = useState(images[0]);
+  const [currentVideo, setCurrentVideo] = useState(videos[0]);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    setCurrentImage(images[currentIndex]);
+    setCurrentVideo(videos[currentIndex]);
   }, [currentIndex]);
 
   useEffect(() => {
@@ -40,35 +33,35 @@ export default function Collabs() {
       setProgress((prevProgress) =>
         prevProgress >= 100 ? 100 : prevProgress + 1
       );
-    }, 30); 
+    }, 30);
 
     return () => clearInterval(timer);
   }, [currentIndex]);
 
   const handleNext = () => {
     setProgress(0);
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % videos.length);
   };
 
   const handlePrevious = () => {
     setProgress(0);
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? videos.length - 1 : prevIndex - 1
     );
   };
 
   const handlers = useSwipeable({
     onSwipedLeft: () => handleNext(),
     onSwipedRight: () => handlePrevious(),
-    trackMouse: true, 
+    trackMouse: true,
     trackTouch: true,
-    onSwiping: (event) => event.event.preventDefault(), 
+    onSwiping: (event) => event.event.preventDefault(),
   });
 
   return (
     <motion.div
       className="w-full min-h-screen flex flex-col justify-start items-center text-center bg-[#1a1a1a] px-4 pt-8 lg:pt-16"
-      animate={{ backgroundColor: currentImage.bgColor }}
+      animate={{ backgroundColor: currentVideo.bgColor }}
       transition={{ duration: 1.5 }}
     >
       {/* Title Section */}
@@ -85,17 +78,21 @@ export default function Collabs() {
         </div>
       </div>
 
-      {/* Image and Navigation Dots */}
+      {/* Video and Navigation Dots */}
       <div {...handlers} className="relative mt-8 w-full flex justify-center">
-        <Image
-          src={currentImage.src}
-          alt="Current Image"
-          width={600}
-          height={400}
+        {/* Replace Image component with an iframe for the video */}
+        <iframe
+          src={currentVideo.src}
+          title="YouTube video player"
+          width="600"
+          height="400"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
           className="rounded-xl shadow-lg"
-        />
+        ></iframe>
         <div className="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 flex gap-2">
-          {images.map((_, index) => (
+          {videos.map((_, index) => (
             <div
               key={index}
               onClick={() => setCurrentIndex(index)}
@@ -110,12 +107,12 @@ export default function Collabs() {
       {/* Description */}
       <motion.p
         className="text-gray-300 mt-12 text-lg font-light max-w-[600px] px-4"
-        key={currentImage.description}
+        key={currentVideo.description}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        {currentImage.description}
+        {currentVideo.description}
       </motion.p>
     </motion.div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Nita from "../public/Nita.png";
+import Nita from "../public/Nita.jpg";
 import { ProfilePhoto } from "./ProfilePhoto";
 export const AboutUs = () => {
   return (
@@ -17,21 +17,21 @@ export const AboutUs = () => {
           className="text-lg text-black lg:text-xl lg:pr-14 text-justify text-center  px-2 tracking-tight"
           style={{ lineHeight: "1.85" }}
         >
-          As an accomplished entrepreneur with expertise in leadership and
-          business development, I have played a key role in effectively overseen
-          projects that generated over $20 million in revenue. At this
-          particular stage, my proficient team is dedicated to exploring new
-          markets, uncovering new growth opportunities, and driving strategies
-          to grow and retain our customer base.
+         Nita has been doing direct-to-seller since 2017 and has done numerous
+          deals that include mainly preforeclosures and probates. Currently, 
+          she is partnering with people nationwide and creating a door-knocking
+           team in Illinois. She is the co-host on the preforeclosures daily dial 
+           in the SubTo Community every Wednesday with Caroline Cain and is a leader
+            in Chicago. When her and her husband started, they had no money, so she
+             was forced to doing direct-to-seller to find the best deals out there. 
+             She has done a lot of mindset work/wholesaling training and masterminds.
+              
           <span className="hidden lg:flex lg:pt-4 tracking-tight">
-            My career has been deeply rooted in the service industry, giving me
-            a unique understanding of the diverse needs of individuals. This
-            experience enables me to connect with people effectively and deliver
-            the best possible outcomes for all parties involved. I have coached
-            over 200 students with a 99% success rate, and I now own nine
-            businesses. I attribute the success of these ventures entirely to
-            mastering the right systems, processes, and the importance of having
-            the right people in place.
+          She has also done intensive meditation training and is a Master with 
+              body and brain centers, which has helped her in her success and healing
+               from her past traumas. She has been a victor, not a victim of domestic
+                violence, and her purpose is to build homes for women that go through
+                 domestic violence.
           </span>
         </p>
       </div>

@@ -39,16 +39,7 @@ const Blogs = () => {
       description: "Facing foreclosure is a distressing situation for any homeowner. The looming threat of losing your home due to missed mortgage payments can cause sleepless nights and anxiety about your future. That's where Pre-foreclosure Saver steps in, offering a lifeline to help you navigate the complexities of pre-foreclosure .",
       link: 'https://www.facebook.com/share/DgHSqCUZWNZcZono/?mibextid=WC7FNe' // Link for this card
     },
-    {
-      title: 'Events',
-      description: 'Choose a convenient time for your service, and we’ll reserve a slot for you.',
-      link: '/events' // Link for this card
-    },
-    {
-      title: 'Blogs',
-      description: 'Bring your car in at the scheduled time, our expert technicians will handle it.',
-      link: '/blogs' // Link for this card
-    },
+    
   ];
 
   return (
@@ -84,7 +75,7 @@ const Blogs = () => {
               </div>
               <div className="w-full h-px bg-[#AC9552] my-1"></div>
               <div>
-                <p className="text-[#AC9552] px-4 text-center text-xl lg:text-3xl">
+                <p className="text-[#AC9552] px-4 text-center text-sm lg:text-3xl">
                   {data.description}
                 </p>
               </div>
