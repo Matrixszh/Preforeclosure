@@ -48,12 +48,12 @@ export default function Home() {
       {scrolled?null : <p className="text-white text-md md:text-lg font-bold">Contact Now!</p>}
       <Button_Component />
       </div>
-      <section id="home" className="max-w-[1440px] min-h-screen overflow-hidden bg-black flex flex-col items-center scroll-smooth">
+      <section id="home" className="min-h-screen overflow-hidden bg-black flex flex-col items-center scroll-smooth">
         <div className="absolute inset-0 h-full">
           <Image
             src={bg_img}
             alt="bg_image"
-            className="opacity-35 h-100% object-cover lg:h-auto"
+            className="opacity-35 h-screen object-cover lg:h-auto"
           />
         </div>
         <Header />

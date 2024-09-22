@@ -55,10 +55,10 @@ export const Header = () => {
   };
     return (
       <>
-        <header className={`fixed flex justify-between w-full px-1 md:p-2 max-h-[75px]  z-20 ${isScrolled ? 'bg-black' : 'bg-transparent'} scroll-smooth`}>
+        <header className={`fixed flex justify-between w-full px-1 md:p-2 max-h-[87px]  z-20 ${isScrolled ? 'bg-black' : 'bg-transparent'} scroll-smooth`}>
           {isMenuOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-60 z-30"
+            className="fixed inset-0 bg-black bg-opacity-60 z-40"
             onClick={toggleMenu}
           ></div>
           )}
