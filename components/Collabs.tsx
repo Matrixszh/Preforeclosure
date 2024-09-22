@@ -12,17 +12,17 @@ const images = [
   {
     src: bg_image3,
     description: 'This is the description for Image 1',
-    bgColor: '#000000', // Yellow
+    bgColor: '#000000', // Black
   },
   {
-    src: bg_image3,
+    src: bg_image2,
     description: 'This is the description for Image 2',
-    bgColor: '#3F3F3F', // Red
+    bgColor: '#0C052C', // dark blue
   },
   {
     src: bg_image3,
     description: 'This is the description for Image 3',
-    bgColor: '#706129', // Blue
+    bgColor: '#706129', // golden
   },
 ];
 
@@ -57,13 +57,12 @@ export default function Collabs() {
     );
   };
 
-  // Swipeable handler for mobile swipe functionality
   const handlers = useSwipeable({
     onSwipedLeft: () => handleNext(),
     onSwipedRight: () => handlePrevious(),
-    trackMouse: true, // Enable for desktop swipe simulation
-    trackTouch: true, // Enable for mobile touch
-    onSwiping: (event) => event.event.preventDefault(), // Manually prevent default behavior
+    trackMouse: true, 
+    trackTouch: true,
+    onSwiping: (event) => event.event.preventDefault(), 
   });
 
   return (
@@ -72,7 +71,7 @@ export default function Collabs() {
       animate={{ backgroundColor: currentImage.bgColor }}
       transition={{ duration: 1.5 }}
     >
-      {/* Header Section */}
+
       <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
         <p className="text-[#c2a85b] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
           See What We Do
@@ -86,7 +85,7 @@ export default function Collabs() {
         </div>
       </div>
 
-      {/* Image and Description Section */}
+
       <div {...handlers} className="relative mt-8 w-full flex justify-center">
         <Image
           src={currentImage.src}
@@ -108,7 +107,7 @@ export default function Collabs() {
         </div>
       </div>
 
-      {/* Description */}
+
       <motion.p
         className="text-gray-300 mt-12 text-lg font-light max-w-[600px]"
         key={currentImage.description}
