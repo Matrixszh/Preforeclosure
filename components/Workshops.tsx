@@ -126,7 +126,7 @@ export default function ReviewsWithProgressBar() {
       </Carousel>
 
       {/* Progress Bar */}
-      <div className="w-[80%] lg:w-[50vw] h-2 bg-gray-200 mt-4 rounded-full" onClick={handleProgressBarClick}>
+      <div className="w-[80%] lg:w-[50vw] h-2 bg-gray-200 rounded-full my-4" onClick={handleProgressBarClick}>
         <div
           className="h-full bg-[#AC9552] rounded-full transition-all duration-100"
           style={{ width: `${progress}%` }}

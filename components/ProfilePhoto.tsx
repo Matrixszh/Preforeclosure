@@ -5,7 +5,7 @@ import Nita from "../public/Nita.jpg";
 
 export const ProfilePhoto = () => {
   return (
-    <div className="hidden lg:block relative">
+    <div className="hidden lg:block relative ">
       
 
       <div
@@ -18,7 +18,7 @@ export const ProfilePhoto = () => {
         <Image
           src={Nita}
           alt="Nita"
-          className="rounded-lg z-10"
+          className="rounded-lg z-10 "
           style={{ width: "100%" }} // Image width is relative to the parent div
           priority
         />

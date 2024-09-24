@@ -40,7 +40,7 @@ export const AboutUs = () => {
         <Image
           src={Nita}
           alt="Nita"
-          className="rounded-full lg:hidden  w-[70vw] shadow-2xl"
+          className="rounded-full lg:hidden  w-[70vw] shadow-2xl pt-6"
         />
       </div>
     </div>

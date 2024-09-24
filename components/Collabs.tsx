@@ -7,12 +7,12 @@ import { useSwipeable } from 'react-swipeable';
 // Define the YouTube video URLs with descriptions and background colors
 const videos = [
   {
-    src: 'https://www.youtube.com/embed/R-BWQAclh4Y?si=6tDUyhd7Khk1dYR', // Example YouTube URL
+    id: 'R-BWQAclh4Y?si=6tDUyhd7Khk1dYR', // Example YouTube URL
     description: "Nita Patel shares her journey from hardship to success as a real estate wholesaler. After overcoming a difficult childhood and abusive marriage, she began wholesaling with $5,000. Through perseverance, door-knocking, and targeting overlooked deals, she built a thriving business, emphasizing self-belief and consistency in achieving success.",
     bgColor: '#000000', // Black
   },
   {
-    src: 'https://www.youtube.com/embed/OjRC4JE8bzc?si=-zUwQ9Bii9wGaEjh', // Example YouTube URL
+    id: 'OjRC4JE8bzc?si=-zUwQ9Bii9wGaEjh', // Example YouTube URL
     description:"Nita Patel shares her journey from an accounting job to becoming a successful real estate investor in Chicago. She discusses her methods of acquiring deals, including door-knocking, cold-calling, and using lead sources. Nita emphasizes the importance of mindset, persistence, and personal development. She plans to expand into multi-unit properties and group homes for battered women.",
     bgColor: '#706129', // dark blue
   },
@@ -60,36 +60,22 @@ export default function Collabs() {
 
   return (
     <motion.div
-      className="w-full min-h-screen flex flex-col justify-start items-center text-center bg-[#1a1a1a] px-4 pt-8 lg:pt-16"
+      className="w-full flex flex-col justify-start items-center text-center bg-[#1a1a1a] px-4 pt-8 lg:pt-16"
       animate={{ backgroundColor: currentVideo.bgColor }}
       transition={{ duration: 1.5 }}
     >
-      {/* Title Section */}
-      <div className="flex flex-col items-center gap-2 justify-center mb-8 lg:mb-16">
-        <p className="text-[#c2a85b] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
-          See What We Do
-        </p>
-        <div className="flex items-center justify-center">
-          <div className="h-[2px] w-16 bg-gray-400 mr-4"></div>
-          <h1 className="text-white text-center text-3xl lg:text-6xl">
-            Collaborations
-          </h1>
-          <div className="h-[2px] w-16 bg-gray-400 ml-4"></div>
-        </div>
-      </div>
-
       {/* Video and Navigation Dots */}
-      <div {...handlers} className="relative mt-8 w-full flex justify-center">
-        {/* Replace Image component with an iframe for the video */}
+      <div {...handlers} className="relative w-full lg:w-[45vw] lg:h-[45vh] md:w-[35vw] md:h-[20vh] h-[54vw]">
+        Replace Image component with an iframe for the video
         <iframe
-          src={currentVideo.src}
+          src={`https://www.youtube.com/embed/${currentVideo.id}`}
           title="YouTube video player"
           width="600"
           height="400"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="rounded-xl shadow-lg"
+          className="absolute top-0 left-0 w-full h-full rounded-lg"
         ></iframe>
         <div className="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 flex gap-2">
           {videos.map((_, index) => (
@@ -106,7 +92,7 @@ export default function Collabs() {
 
       {/* Description */}
       <motion.p
-        className="text-gray-300 mt-12 text-lg font-light max-w-[600px] px-4"
+        className="text-gray-300 md:text-lg text-sm leading-7 py-12 text-justify  font-light max-w-[600px] "
         key={currentVideo.description}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

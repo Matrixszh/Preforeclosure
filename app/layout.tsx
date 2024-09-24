@@ -3,8 +3,14 @@ import logo from "../public/logo.png"
 import "./globals.css";
 import { Playfair_Display } from "next/font/google";
 import Head from "next/head";
+import Header from "@/components/Header";
+import { Poppins } from "next/font/google";
 
-const playfair = Playfair_Display({ subsets: ['latin'] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+});
+// const playfair = Playfair_Display({ subsets: ['latin'] });
 
 
 export const metadata: Metadata = {
@@ -19,7 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={playfair.className}>{children}</body>
+
+      <body className={`${poppins.className} `}>
+        <Header/>
+        {children}
+      </body>
     </html>
   );
 }

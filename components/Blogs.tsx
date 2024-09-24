@@ -31,7 +31,7 @@ const Blogs = () => {
   const slides = [
     {
       title: 'Pre-foreclosure Saver',
-      description: 'Are you facing the daunting prospect of foreclosure? Don not panic. There are steps you can take to avoid losing your home. By understanding the pre-foreclosure process and implementing effective strategies, you can significantly increase your chances of keeping your property.',
+      description: 'Are you facing the daunting prospect of foreclosure? Don not panic. There are steps you can take to avoid losing your home. By understanding the pre-foreclosure process and also implementing effective strategies, you can significantly increase your chances of keeping your property.',
       link: 'https://www.facebook.com/share/fnWmP6VCjnXsfGCv/?mibextid=WC7FNe' // Link for this card
     },
     {
@@ -43,17 +43,7 @@ const Blogs = () => {
   ];
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center gap-[12vh] bg-white text-white">
-      <div className="flex flex-col items-center gap-4 justify-center lg:justify-start pt-[5vh]">
-        <p className="text-[#7C640E] text-center px-8 py-1 rounded-2xl text-sm tracking-wider">
-          READ UP
-        </p>
-        <div className="flex items-center justify-center">
-          <div className="h-[2px] w-16 bg-black mr-4"></div>
-          <h1 className="text-black text-center text-3xl lg:text-6xl">My Blogs</h1>
-          <div className="h-[2px] w-16 bg-black ml-4"></div>
-        </div>
-      </div>
+    <div className="relative w-full  flex flex-col items-center gap-[12vh] bg-white text-white">
 
       {/* Slider for mobile devices */}
       <div className="block lg:hidden w-full px-1">
@@ -67,15 +57,15 @@ const Blogs = () => {
           customRightArrow={<CustomRightArrow />}
         >
           {slides.map((data: any, index: any) => (
-            <div key={index} className="flex flex-col bg-black rounded-xl items-center gap-[8vh] lg:gap-[14vh] lg:w-[52vw] lg:h-[60vh] mx-auto pt-10 h-[55vh] w-[80%]">
+            <div key={index} className="flex flex-col bg-black rounded-xl items-center gap-[5vh] lg:gap-[14vh] lg:w-[52vw] lg:h-[60vh] mx-auto pt-10 h-[55vh] w-[80%]">
               <div>
-                <h2 className="text-[#AC9552] lg:text-4xl text-3xl text-center font-bold">
+                <h2 className="text-[#AC9552] lg:text-4xl text-2xl text-center font-bold px-2">
                   {data.title}
                 </h2>
               </div>
-              <div className="w-full h-px bg-[#AC9552] my-1"></div>
+              <div className="w-[80%] h-[1px] bg-[#AC9552]   "></div>
               <div>
-                <p className="text-[#AC9552] px-4 text-center text-sm lg:text-3xl">
+                <p className="text-[#AC9552] px-4 text-center text-sm lg:text-3xl text-justify">
                   {data.description}
                 </p>
               </div>
@@ -85,14 +75,14 @@ const Blogs = () => {
       </div>
 
       {/* Static cards for larger screens */}
-      <div className="hidden lg:flex flex-wrap justify-center items-start gap-8 w-full">
+      <div className="hidden lg:flex flex-wrap justify-center items-start gap-8 ">
         {slides.map((slide, index) => (
           <a
             key={index}
             href={slide.link} 
             target="_blank"
             rel="noopener noreferrer" 
-            className="w-80 min-h-[28rem] bg-black m-4 flex flex-col gap-8 p-6 items-center text-white transition-transform duration-300 hover:scale-105 hover:shadow-lg rounded-xl"
+            className="w-[45%] h-80 bg-black flex flex-col gap-8 p-6 items-center text-white transition-transform duration-300 hover:scale-105 hover:shadow-lg rounded-xl"
           >
             <h2 className="text-[#AC9552] text-4xl font-bold mb-4">
               {slide.title}
