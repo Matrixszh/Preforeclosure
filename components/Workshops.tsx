@@ -2,29 +2,33 @@ import { useState, useEffect } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from 'next/image';
-import bg_img from "../public/bg_img.jpg";
+import meet1 from "../public/meet1.jpg";
+import meet2 from "../public/meet2.jpg";
+import meet3 from "../public/meet3.jpg";
+import meet4 from "../public/meet4.jpg";
+import meet5 from "../public/meet5.jpg";
 
 // Add image URLs to the reviews
 const reviews = [
   {
-    title: "Excellent Service",
-    text: "The service at Xcellent Auto Repair was exceptional. The staff was friendly and the repairs were done promptly. Highly recommend!",
-    image: bg_img,
+    title: "Finding Preforeclosure Leads",
+    text: "Nita teaches how to find preforeclosure leads using public records and real estate tools. You’ll discover strategies for building a reliable lead pipeline that keeps opportunities flowing consistently.",
+    image: meet1,
   },
   {
-    title: "Great Experience",
-    text: "I had a great experience with Xcellent Auto Repair. They were transparent about the repairs and the costs. My car has never run better!",
-    image: bg_img,
+    title: "Scrubbing and Narrowing Down Leads",
+    text: "Nita explains how to refine your list by scrubbing out entries. Then, she shows how to narrow down leads by analyzing factors like property details and urgency, helping you focus on the highest-potential deals.",
+    image: meet3,
   },
   {
-    title: "Highly Recommend",
-    text: "Xcellent Auto Repair is the place to go for reliable and honest auto repair. The technicians are skilled and professional.",
-    image: bg_img,
+    title: "Talking To Homeowners",
+    text: "Learn effective communication strategies for cold calling and door knocking. Nita shares techniques to build trust with homeowners and their families, approaching them with empathy and professionalism to increase your chances of closing deals.",
+    image: meet4,
   },
   {
-    title: "Outstanding Customer Service",
-    text: "Outstanding customer service! The team went above and beyond to ensure my vehicle was repaired quickly and correctly.",
-    image: bg_img,
+    title: "Tools and Resources",
+    text: "We’re committed to making sure you’ve got everything you need to get out there and land those deals! Along with access to loads of training and education, these tools in your arsenal will help you close successful deals!",
+    image: meet5,
   },
 ];
 
@@ -96,7 +100,6 @@ export default function ReviewsWithProgressBar() {
         pauseOnHover
         beforeChange={handleBeforeChange}
         className="w-full"
- // Set current index for Carousel
       >
         {reviews.map((data, index) => (
           <div
