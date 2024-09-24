@@ -15,7 +15,7 @@ const events: Brand[] = [
   { image: event4 },
 ];
 
-export default function Brands() {
+export default function Company() {
   return (
     <div className="slider-container overflow-hidden">
       <div className="slider h-full">
