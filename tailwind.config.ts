@@ -52,6 +52,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        textShadow: {
+          'white': '0 1px 2px rgba(255, 255, 255, 0.7)', // Customize the shadow as needed
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -74,7 +77,9 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+    require('tailwindcss-textshadow')
+  ],
 } satisfies Config
 
 export default config

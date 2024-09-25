@@ -5,7 +5,7 @@ import Image from 'next/image';
 import bg_img from "../public/bg_img.jpg"
 import cm1 from "../public/cm1.jpg"
 import cm2 from "../public/cm2.jpg"
-import cm3 from "../public/cm3.jpg"
+import cm3 from "../public/meet6.jpg"
 import cm4 from "../public/cm4.jpg"
 
 // Add image URLs to the reviews

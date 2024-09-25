@@ -52,6 +52,15 @@
   animation: slide 100s linear infinite;
   height: 100%;
 }
+/* styles/globals.css */
+/* styles/globals.css */
+.text-shadow {
+  text-shadow: 
+    2px 2px 3px rgba(255, 255, 255, 0.7),  /* Soft white shadow */
+    0 0 10px rgba(255, 255, 255, 0.5),     /* Glowing effect */
+    0 0 20px rgba(255, 204, 0, 0.5);        /* Soft yellow glow */
+}
+
 
 @keyframes slide {
   0% {

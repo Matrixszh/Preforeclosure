@@ -14,13 +14,12 @@ export const AboutUs = () => {
           </span>{" "}
         </h1>
         <p
-          className="text-lg text-black lg:text-xl lg:pr-14 text-justify text-center  px-2 tracking-tight"
+          className="text-lg text-black lg:text-xl lg:pr-14 sm:text-left text-center  px-2 tracking-tight"
           style={{ lineHeight: "1.85" }}
         >
          Nita has been doing direct-to-seller since 2017 and has done numerous
           deals that include mainly preforeclosures and probates. Currently, 
-          she is partnering with people nationwide and creating a door-knocking
-           team in Illinois. She is the co-host on the preforeclosures daily dial 
+          she is partnering with people nationwide and has a door knocking team in Illinois. She is the co-host on the preforeclosures daily dial 
            in the SubTo Community every Wednesday with Caroline Cain and is a leader
             in Chicago. When her and her husband started, they had no money, so she
              was forced to doing direct-to-seller to find the best deals out there. 

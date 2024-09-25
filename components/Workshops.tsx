@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from 'next/image';
-import meet1 from "../public/meet1.jpg";
+import meet1 from "../public/meet6.jpg";
 import meet2 from "../public/meet2.jpg";
 import meet3 from "../public/meet3.jpg";
 import meet4 from "../public/meet4.jpg";

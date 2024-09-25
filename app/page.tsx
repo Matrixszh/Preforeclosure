@@ -1,10 +1,9 @@
 "use client"
 import Image from "next/image";
-import bg_img from "../public/Bg_logo.jpg";
+import bg_img from "../public/bg_logo.jpg";
 import React, { useState, useEffect } from "react";
 import Blogs from "@/components/Blogs";
 import Meetups from "@/components/MeetUps";
-import Company from "@/components/Company";
 import { Footer } from "@/components/Footer";
 import { useInView } from "react-intersection-observer";
 import { Button_Component } from "@/components/Button_Component";
@@ -68,9 +67,11 @@ export default function Home() {
         <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-[300px] shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[35vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-0">
           <div className="flex flex-col gap-6">
           <h1 className="md:text-8xl text-4xl text-white font-medium text-center md:text-left">
-              <span className="bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] bg-clip-text text-transparent">
-                Preforeclosure
-              </span>
+          <span className="bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] bg-clip-text text-[#FFDD7C] text-shadow">
+        Preforeclosures Queen
+      </span>
+
+
             </h1>
             <h2 className="md:text-4xl text-md text-white font-medium text-center md:text-left">
               <span className="bg-white bg-clip-text text-transparent ">
@@ -134,7 +135,7 @@ export default function Home() {
             className="text-lg lg:text-xl text-justify  py-4 md:px-14 px-7 "
             style={{ lineHeight: "1.85" }}
           >
-            We work differently at The Sharma Group Inc.. When you contact us and 
+            We work differently at The Preforeclosures Queen.. When you contact us and 
             submit the short property information , we’ll give you a 
             fair all-cash offer on your house within 24 hours… and the best part 
             is: we can close whenever YOU choose to close – it’s entirely up to you.
