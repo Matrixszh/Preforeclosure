@@ -75,7 +75,7 @@ export default function Home() {
           />
         </div>
         {/* <Header /> */}
-        <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-[300px] shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[35vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-0">
+        <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-[300px] shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[35vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-5">
           <div className="flex flex-col gap-6">
             <h1 className="md:text-8xl text-4xl text-white font-medium text-center md:text-left">
               <span className="bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] bg-clip-text text-[#FFDD7C] text-shadow">
