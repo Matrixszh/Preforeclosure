@@ -17,7 +17,7 @@ const videos = [
     bgColor: '#706129', // dark blue
   },
   {
-    id: 'OjRC4JE8bzc?si=-zUwQ9Bii9wGaEjh', // Example YouTube URL
+    id: 'EmiZdD0ZCiM?si=seje_DjbeXk5ePJt', // Example YouTube URL
     description:"Nita Patel transformed her life from an abusive marriage and financial struggles to becoming a multi-millionaire in real estate. Through personal development and focusing on off-market deals, she built a portfolio of 26 rental properties. Nita emphasizes the importance of mindset, persistence, and building rapport with sellers in her journey",
     bgColor: '#01032D', // dark blue
   },
