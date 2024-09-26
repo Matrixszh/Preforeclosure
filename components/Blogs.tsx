@@ -47,32 +47,39 @@ const Blogs = () => {
 
       {/* Slider for mobile devices */}
       <div className="block lg:hidden w-full px-1">
-        <Carousel
-          responsive={responsive}
-          autoPlay={true}
-          infinite={true}
-          autoPlaySpeed={4000}
-          pauseOnHover
-          customLeftArrow={<CustomLeftArrow />}
-          customRightArrow={<CustomRightArrow />}
-        >
-          {slides.map((data: any, index: any) => (
-            <div key={index} className="flex flex-col bg-black rounded-xl items-center gap-[5vh] lg:gap-[14vh] lg:w-[52vw] lg:h-[60vh] mx-auto pt-10 h-[55vh] w-[80%]">
-              <div>
-                <h2 className="text-[#AC9552] lg:text-4xl text-2xl text-center font-bold px-2">
-                  {data.title}
-                </h2>
-              </div>
-              <div className="w-[80%] h-[1px] bg-[#AC9552]   "></div>
-              <div>
-                <p className="text-[#AC9552] px-4 text-center text-sm lg:text-3xl text-justify">
-                  {data.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </Carousel>
-      </div>
+  <Carousel
+    responsive={responsive}
+    autoPlay={true}
+    infinite={true}
+    autoPlaySpeed={4000}
+    pauseOnHover
+    customLeftArrow={<CustomLeftArrow />}
+    customRightArrow={<CustomRightArrow />}
+  >
+    {slides.map((data: any, index: any) => (
+      <a
+        key={index}
+        href={data.link} // Add link here
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex flex-col bg-black rounded-xl items-center gap-[5vh] lg:gap-[14vh] lg:w-[52vw] lg:h-[60vh] mx-auto pt-10 h-[55vh] w-[80%] no-underline"
+      >
+        <div>
+          <h2 className="text-[#AC9552] lg:text-4xl text-2xl text-center font-bold px-2">
+            {data.title}
+          </h2>
+        </div>
+        <div className="w-[80%] h-[1px] bg-[#AC9552]"></div>
+        <div>
+          <p className="text-[#AC9552] px-4 text-center text-sm lg:text-3xl text-justify">
+            {data.description}
+          </p>
+        </div>
+      </a>
+    ))}
+  </Carousel>
+</div>
+
 
       {/* Static cards for larger screens */}
       <div className="hidden lg:flex flex-wrap justify-center items-start gap-8 ">

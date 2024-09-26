@@ -16,6 +16,11 @@ const videos = [
     description:"Nita Patel shares her journey from an accounting job to becoming a successful real estate investor in Chicago. She discusses her methods of acquiring deals, including door-knocking, cold-calling, and using lead sources. Nita emphasizes the importance of mindset, persistence, and personal development. She plans to expand into multi-unit properties and group homes for battered women.",
     bgColor: '#706129', // dark blue
   },
+  {
+    id: 'OjRC4JE8bzc?si=-zUwQ9Bii9wGaEjh', // Example YouTube URL
+    description:"Nita Patel transformed her life from an abusive marriage and financial struggles to becoming a multi-millionaire in real estate. Through personal development and focusing on off-market deals, she built a portfolio of 26 rental properties. Nita emphasizes the importance of mindset, persistence, and building rapport with sellers in her journey",
+    bgColor: '#01032D', // dark blue
+  },
   
 ];
 

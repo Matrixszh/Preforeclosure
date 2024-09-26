@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import bg_img from "../public/bg_logo.jpg";
+import bg_img from "../public/Bg_logo.jpg";
 import React, { useState, useEffect } from "react";
 import Blogs from "@/components/Blogs";
 import Meetups from "@/components/MeetUps";
@@ -18,6 +18,8 @@ export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const router = useRouter()
+
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
@@ -68,10 +70,8 @@ export default function Home() {
           <div className="flex flex-col gap-6">
           <h1 className="md:text-8xl text-4xl text-white font-medium text-center md:text-left">
           <span className="bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] bg-clip-text text-[#FFDD7C] text-shadow">
-        Preforeclosures Queen
-      </span>
-
-
+            Preforeclosures Queen
+          </span>
             </h1>
             <h2 className="md:text-4xl text-md text-white font-medium text-center md:text-left">
               <span className="bg-white bg-clip-text text-transparent ">
