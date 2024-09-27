@@ -17,8 +17,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
-  const router = useRouter()
-
+  const router = useRouter();
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -77,12 +76,12 @@ export default function Home() {
           />
         </div>
         {/* <Header /> */}
-        <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-[300px] shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[35vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-5">
+        <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-auto shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[35vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-5">
           <div className="flex flex-col gap-6">
-          <h1 className="md:text-8xl text-5xl text-white font-medium text-center md:text-left">
-          <span className="bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] bg-clip-text text-[#FFDD7C] text-shadow">
-            Preforeclosures Queen
-          </span>
+            <h1 className="md:text-8xl text-4xl text-white font-medium text-center md:text-left">
+              <span className="bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] bg-clip-text text-[#FFDD7C] text-shadow">
+                Preforeclosures Queen
+              </span>
             </h1>
             <h2 className="md:text-4xl text-md text-white font-medium text-center md:text-left">
               <span className="bg-white bg-clip-text text-transparent ">
@@ -98,7 +97,7 @@ export default function Home() {
                 }}
                 className="relative z-10 lg:text-md md:text-lg text-sm px-[80px] md:px-[80px] lg:px-0 "
               >
-                LETS CONNECT 
+                LETS CONNECT
               </span>
               <div className="absolute inset-0 bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] group-hover:opacity-0 transition-opacity duration-300"></div>
             </button>
@@ -158,7 +157,7 @@ export default function Home() {
         {/* <Company/> */}
         <div className="flex flex-col gap-8" id="event-content">
           <p
-            className="text-lg lg:text-xl text-justify  py-4 md:px-14 px-7 "
+            className="text-sm lg:text-xl text-justify  py-4 md:px-14 px-7 "
             style={{ lineHeight: "1.85" }}
           >
             We work differently at The Preforeclosures Queen.. When you contact
@@ -193,7 +192,7 @@ export default function Home() {
         </div>
         <Meetups />
         <p
-          className="px-7 text-center text-justify lg:text-xl text-lg md:px-14"
+          className="px-7 text-center text-justify lg:text-xl text-sm md:px-14"
           style={{ lineHeight: "1.85" }}
         >
           Chicago Meetups is where ambitious minds come together to connect,

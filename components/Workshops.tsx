@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Image from 'next/image';
+import Image from "next/image";
 import meet1 from "../public/meet1.jpg";
 import meet2 from "../public/meet2.jpg";
 import meet3 from "../public/meet3.jpg";
@@ -69,7 +69,7 @@ export default function ReviewsWithProgressBar() {
     const intervalId = setInterval(() => {
       setProgress((prevProgress) => {
         if (prevProgress >= totalProgress) return 0; // Reset if complete
-        return prevProgress + (100 / (autoPlaySpeed / updateInterval));
+        return prevProgress + 100 / (autoPlaySpeed / updateInterval);
       });
     }, updateInterval);
 
@@ -79,15 +79,17 @@ export default function ReviewsWithProgressBar() {
   // Handle progress bar click to change slides
   const handleProgressBarClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const progressBarWidth = e.currentTarget.offsetWidth;
-    const clickPosition = e.clientX - e.currentTarget.getBoundingClientRect().left;
-    const newIndex = Math.floor((clickPosition / progressBarWidth) * reviews.length);
-  
+    const clickPosition =
+      e.clientX - e.currentTarget.getBoundingClientRect().left;
+    const newIndex = Math.floor(
+      (clickPosition / progressBarWidth) * reviews.length
+    );
+
     if (newIndex >= 0 && newIndex < reviews.length) {
       setCurrentIndex(newIndex);
       setProgress(0); // Reset progress when clicked
     }
   };
-  
 
   return (
     <div className="w-full flex flex-col items-center">
@@ -104,11 +106,11 @@ export default function ReviewsWithProgressBar() {
         {reviews.map((data, index) => (
           <div
             key={index}
-            className="flex flex-col bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] shadow-lg border-2 border-[#AC9552] rounded-xl items-start p-6 gap-4 lg:w-[50vw] lg:h-[70vh] mx-auto pt-6 w-[80%]"
-            style={{ minHeight: '70vh' }} // Ensure enough height for the content
+            className="flex flex-col bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] shadow-lg border-2 border-[#AC9552] rounded-xl items-start p-6 gap-4 lg:w-[50vw] lg:h-[70vh] mx-auto pt-6 w-[90%] min-h-[70vh]"
+            // Ensure enough height for the content
           >
             {/* Image at the top */}
-            <div className="w-full h-[40vh] relative mb-4">
+            <div className="w-full aspect-[4/3] relative mb-4">
               <Image
                 src={data.image}
                 alt={data.title}
@@ -121,7 +123,9 @@ export default function ReviewsWithProgressBar() {
 
             {/* Title and Description */}
             <div className="text-left w-full">
-              <h2 className="text-black font-semibold text-[#AC9552] lg:text-lg text-lg mb-2">"{data.title}"</h2>
+              <h2 className="text-black font-semibold text-[#AC9552] lg:text-lg text-lg mb-2">
+                "{data.title}"
+              </h2>
               <p className="text-black text-base lg:text-xl">"{data.text}"</p>
             </div>
           </div>
@@ -129,7 +133,10 @@ export default function ReviewsWithProgressBar() {
       </Carousel>
 
       {/* Progress Bar */}
-      <div className="w-[80%] lg:w-[50vw] h-2 bg-gray-200 rounded-full my-4" onClick={handleProgressBarClick}>
+      <div
+        className="w-[80%] lg:w-[50vw] h-2 bg-gray-200 rounded-full my-4"
+        onClick={handleProgressBarClick}
+      >
         <div
           className="h-full bg-[#AC9552] rounded-full transition-all duration-100"
           style={{ width: `${progress}%` }}

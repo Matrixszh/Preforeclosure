@@ -56,7 +56,7 @@ const AppointmentForm = () => {
           {...register("name", { required: "Name is required" })}
           type="text"
           placeholder="Name"
-          className="rounded-xl p-2 border"
+          className="rounded-xl p-2 border text-sm md:text-lg"
         />
         {errors.name && (
           <div className="text-red-500">{errors.name.message}</div>
@@ -74,7 +74,7 @@ const AppointmentForm = () => {
               })}
               type="text"
               placeholder="Email"
-              className="rounded-xl p-2 border w-full"
+              className="rounded-xl p-2 border w-full text-sm md:text-lg"
             />
             {errors.email && (
               <div className="text-red-500">{errors.email.message}</div>
@@ -92,7 +92,7 @@ const AppointmentForm = () => {
               })}
               type="text"
               placeholder="Number"
-              className="rounded-xl p-2 border w-full"
+              className="rounded-xl p-2 border w-full text-sm md:text-lg"
             />
             {errors.number && (
               <div className="text-red-500">{errors.number.message}</div>
@@ -109,7 +109,7 @@ const AppointmentForm = () => {
             },
           })}
           placeholder="Description"
-          className="rounded-xl p-2 border"
+          className="rounded-xl p-2 border text-sm md:text-lg"
           rows={4}
         />
         {errors.description && (
@@ -118,7 +118,7 @@ const AppointmentForm = () => {
 
         <button
           type="submit"
-          className="w-full bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] text-white p-2 rounded-xl"
+          className="w-full bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] text-white p-2 rounded-xl text-sm md:text-lg"
         >
           Contact Us
         </button>

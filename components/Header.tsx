@@ -79,15 +79,16 @@ const Header = () => {
 
   return (
     <nav className="absolute top-0 left-0 right-0 bg-transparent z-50 h-[70px] lg:h-[80px] w-full md:px-6 px-3">
-      <div className=" h-full flex justify-center md:justify-between items-center ">
+      <div className=" h-full flex justify-center lg:justify-between items-center ">
         <a href="#">
           <Image
             src={logo}
             alt="logo"
             className="
-              hover:cursor-pointer 
-              md:-mt-5 
-              md:w-[110px] 
+              hover:cursor-pointer
+              mt-14
+              lg:mt-2
+              lg:w-[110px] 
               w-[200px]
               drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]   /* Glow effect */
               md:drop-shadow-none   /* Remove glow on medium and larger screens */
