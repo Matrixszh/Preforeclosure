@@ -6,16 +6,23 @@ import { useSwipeable } from 'react-swipeable';
 
 // Define the YouTube video URLs with descriptions and background colors
 const videos = [
+  
   {
-    id: 'R-BWQAclh4Y?si=6tDUyhd7Khk1dYR', // Example YouTube URL
-    description: "Nita Patel shares her journey from hardship to success as a real estate wholesaler. After overcoming a difficult childhood and abusive marriage, she began wholesaling with $5,000. Through perseverance, door-knocking, and targeting overlooked deals, she built a thriving business, emphasizing self-belief and consistency in achieving success.",
-    bgColor: '#000000', // Black
+    id: 'EmiZdD0ZCiM?si=seje_DjbeXk5ePJt', // Example YouTube URL
+    description:"Nita Patel transformed her life from an abusive marriage and financial struggles to becoming a multi-millionaire in real estate. Through personal development and focusing on off-market deals, she built a portfolio of 26 rental properties. Nita emphasizes the importance of mindset, persistence, and building rapport with sellers in her journey",
+    bgColor: '#000000', // dark blue
   },
   {
     id: 'OjRC4JE8bzc?si=-zUwQ9Bii9wGaEjh', // Example YouTube URL
     description:"Nita Patel shares her journey from an accounting job to becoming a successful real estate investor in Chicago. She discusses her methods of acquiring deals, including door-knocking, cold-calling, and using lead sources. Nita emphasizes the importance of mindset, persistence, and personal development. She plans to expand into multi-unit properties and group homes for battered women.",
     bgColor: '#706129', // dark blue
   },
+  {
+    id: 'R-BWQAclh4Y?si=6tDUyhd7Khk1dYR', // Example YouTube URL
+    description: "Nita Patel shares her journey from hardship to success as a real estate wholesaler. After overcoming a difficult childhood and abusive marriage, she began wholesaling with $5,000. Through perseverance, door-knocking, and targeting overlooked deals, she built a thriving business, emphasizing self-belief and consistency in achieving success.",
+    bgColor: '#01032D', // Black
+  },
+  
   
 ];
 
@@ -92,7 +99,7 @@ export default function Collabs() {
 
       {/* Description */}
       <motion.p
-        className="text-gray-300 md:text-lg text-sm leading-7 py-12 text-justify  font-light max-w-[600px] "
+        className="text-gray-300 md:text-xl text-sm leading-7 py-12 text-justify max-w-[600px] "
         key={currentVideo.description}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
