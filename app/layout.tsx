@@ -14,9 +14,34 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  title: "Preforeclosure Queens",
-  description: "Nita has been doing direct-to-seller since 2017 and has done numerous deals that include mainly preforeclosures and probates. ",
+  metadataBase: new URL("https://preforeclosuresqueen.com"),
+  title: "Preforeclosures Queen",
+  description:
+    "Nita has been doing direct-to-seller since 2017 and has done numerous deals that include mainly preforeclosures and probates. Currently, she is partnering with people nationwide and has a door knocking team in Illinois.",
+  openGraph: {
+    title: "Preforeclosures Queen",
+    description:
+      "Nita has been doing direct-to-seller since 2017 and has done numerous deals that include mainly preforeclosures and probates. Currently, she is partnering with people nationwide and has a door knocking team in Illinois.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Preforeclosures Queen",
+      },
+    ],
+    type: "website",
+    url: "/logo.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Preforeclosures Queen",
+    description:
+      "Nita has been doing direct-to-seller since 2017 and has done numerous deals that include mainly preforeclosures and probates. Currently, she is partnering with people nationwide and has a door knocking team in Illinois.",
+    images: ["/logo.png"],
+  },
 };
+
 
 export default function RootLayout({
   children,
