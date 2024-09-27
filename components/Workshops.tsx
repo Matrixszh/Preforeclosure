@@ -110,7 +110,7 @@ export default function ReviewsWithProgressBar() {
             // Ensure enough height for the content
           >
             {/* Image at the top */}
-            <div className="w-full aspect-[4/3] relative mb-4">
+            <div className="w-full h-[300px] relative mb-4">
               <Image
                 src={data.image}
                 alt={data.title}
