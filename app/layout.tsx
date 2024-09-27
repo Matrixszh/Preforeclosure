@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import logo from "../public/logo.png"
+import logo from "../public/logo.png";
 import "./globals.css";
 import { Playfair_Display } from "next/font/google";
 import Head from "next/head";
@@ -12,7 +12,6 @@ const poppins = Poppins({
 });
 // const playfair = Playfair_Display({ subsets: ['latin'] });
 
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://preforeclosuresqueen.com"),
   title: "Preforeclosures Queen",
@@ -24,14 +23,14 @@ export const metadata: Metadata = {
       "Nita has been doing direct-to-seller since 2017 and has done numerous deals that include mainly preforeclosures and probates. Currently, she is partnering with people nationwide and has a door knocking team in Illinois.",
     images: [
       {
-        url: "https://test-nine-brown-79.vercel.app/logo.png",
+        url: "https://preforeclosuresqueen.com/logo.png",
         width: 1200,
         height: 630,
         alt: "Preforeclosures Queen",
       },
     ],
     type: "website",
-    url: "https://test-nine-brown-79.vercel.app/logo.png",
+    url: "https://preforeclosuresqueen.com/logo.png",
   },
   twitter: {
     card: "summary_large_image",
@@ -42,7 +41,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,9 +48,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-
       <body className={`${poppins.className} `}>
-        <Header/>
+        <Header />
         {children}
       </body>
     </html>
