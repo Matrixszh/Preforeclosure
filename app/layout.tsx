@@ -24,14 +24,14 @@ export const metadata: Metadata = {
       "Nita has been doing direct-to-seller since 2017 and has done numerous deals that include mainly preforeclosures and probates. Currently, she is partnering with people nationwide and has a door knocking team in Illinois.",
     images: [
       {
-        url: "/logo.png",
+        url: "https://test-nine-brown-79.vercel.app/_next/static/media/logo.ab42474a.png",
         width: 1200,
         height: 630,
         alt: "Preforeclosures Queen",
       },
     ],
     type: "website",
-    url: "/logo.png",
+    url: "https://test-nine-brown-79.vercel.app/_next/static/media/logo.ab42474a.png",
   },
   twitter: {
     card: "summary_large_image",
