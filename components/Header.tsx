@@ -81,21 +81,23 @@ const Header = () => {
     <nav className="absolute top-0 left-0 right-0 bg-transparent z-50 h-[70px] lg:h-[80px] w-full md:px-6 px-3">
       <div className=" h-full flex justify-center md:justify-between items-center ">
         <a href="#">
-
-            <Image
-              src={logo}
-              alt="logo"
-            className=" hover:cursor-pointer md:-mt-5 md:w-[110px] w-[200px]"
-              priority
-            />
+          <Image
+            src={logo}
+            alt="logo"
+            className=" hover:cursor-pointer md:-mt-5 md:w-[150px] w-[200px]"
+            priority
+          />
         </a>
         <div className="hidden lg:block">
-        <button className="relative overflow-hidden group px-6 py-2 rounded-[10px] text-white font-sm border-2 border-transparent hover:border-[#AC9552] transition-colors duration-300">
-              <span onClick={() => SectionScroll("form")} className="relative z-10 lg:text-lg md:text-lg text-md px-[80px] md:px-[80px] lg:px-0">
-                CONTACT
-              </span>
-              <div className="absolute inset-0 bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] group-hover:opacity-0 transition-opacity duration-300"></div>
-            </button>
+          <button className="relative overflow-hidden group px-6 py-2 rounded-[10px] text-white font-sm border-2 border-transparent hover:border-[#AC9552] transition-colors duration-300">
+            <span
+              onClick={() => SectionScroll("form")}
+              className="relative z-10 lg:text-lg md:text-lg text-md px-[80px] md:px-[80px] lg:px-0"
+            >
+              CONTACT
+            </span>
+            <div className="absolute inset-0 bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] group-hover:opacity-0 transition-opacity duration-300"></div>
+          </button>
         </div>
       </div>
 
