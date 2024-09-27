@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from 'next/image';
-import meet1 from "../public/meet6.jpg";
+import meet1 from "../public/meet1.jpg";
 import meet2 from "../public/meet2.jpg";
 import meet3 from "../public/meet3.jpg";
 import meet4 from "../public/meet4.jpg";
@@ -121,7 +121,7 @@ export default function ReviewsWithProgressBar() {
 
             {/* Title and Description */}
             <div className="text-left w-full">
-              <h2 className="text-black font-semibold text-[#AC9552] lg:text-2xl text-lg mb-2">"{data.title}"</h2>
+              <h2 className="text-black font-semibold text-[#AC9552] lg:text-lg text-lg mb-2">"{data.title}"</h2>
               <p className="text-black text-base lg:text-xl">"{data.text}"</p>
             </div>
           </div>
