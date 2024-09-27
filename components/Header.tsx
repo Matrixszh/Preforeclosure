@@ -82,12 +82,22 @@ const Header = () => {
       <div className=" h-full flex justify-center md:justify-between items-center ">
         <a href="#">
 
-            <Image
-              src={logo}
-              alt="logo"
-            className=" hover:cursor-pointer md:-mt-5 md:w-[110px] w-[200px]"
-              priority
-            />
+              <Image
+            src={logo}
+            alt="logo"
+            className="
+              hover:cursor-pointer 
+              md:-mt-5 
+              md:w-[110px] 
+              w-[200px]
+              drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]   /* Glow effect */
+              md:drop-shadow-none   /* Remove glow on medium and larger screens */
+              animate-pulse        /* Optional pulsing effect for the glow */
+              md:animate-none      /* Remove animation on medium and larger screens */
+            "
+            priority
+      />
+
         </a>
         <div className="hidden lg:block">
         <button className="relative overflow-hidden group px-6 py-2 rounded-[10px] text-white font-sm border-2 border-transparent hover:border-[#AC9552] transition-colors duration-300">
