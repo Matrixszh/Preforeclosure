@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import bg_img from "../public/Bg_logo.jpg";
+import mobile_bg_img from "../public/potrait.jpeg";
+import large_bg_img from "../public/bg_img2.jpg";
 import React, { useState, useEffect } from "react";
 import Blogs from "@/components/Blogs";
 import Meetups from "@/components/MeetUps";
@@ -68,10 +69,18 @@ export default function Home() {
         className="min-h-screen overflow-hidden bg-black flex flex-col items-center scroll-smooth"
       >
         <div className="absolute inset-0 h-full">
+          {/*img for mobile devices */}
           <Image
-            src={bg_img}
+            src={mobile_bg_img}
             alt="bg_image"
-            className="opacity-35 h-screen object-cover"
+            className="opacity-35 h-screen object-cover md:hidden  "
+            style={{ maxHeight: "800px" }}
+          />
+          {/*img for mobile larger devices */}
+          <Image
+            src={large_bg_img}
+            alt="bg_image"
+            className="opacity-35 h-screen object-cover hidden md:block  "
             style={{ maxHeight: "800px" }}
           />
         </div>
