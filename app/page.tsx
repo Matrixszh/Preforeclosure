@@ -1,10 +1,6 @@
 "use client";
 import Image from "next/image";
-<<<<<<< HEAD
-=======
-import mobile_bg_img from "../public/potrait.jpeg";
-import large_bg_img from "../public/bg_img2.jpg";
->>>>>>> e39191ef5519019908a32176bda92d0f74935d2c
+
 import React, { useState, useEffect } from "react";
 import Blogs from "@/components/Blogs";
 import Meetups from "@/components/MeetUps";
