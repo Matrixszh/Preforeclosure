@@ -1,5 +1,4 @@
 // components/ImageWithDescription.tsx
-// components/ImageWithDescription.tsx
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useSwipeable } from "react-swipeable";
@@ -29,20 +28,23 @@ const videos = [
 export default function ImageWithDescription() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentVideo, setCurrentVideo] = useState(videos[0]);
+  const [isPaused, setIsPaused] = useState(false); // Track pause status
 
   // Update the current video when the index changes
   useEffect(() => {
     setCurrentVideo(videos[currentIndex]);
   }, [currentIndex]);
 
-  // Automatic slide change every 10 seconds
+  // Automatic slide change every 10 seconds (only if not paused)
   useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 3000); // 10 seconds
+    if (!isPaused) {
+      const interval = setInterval(() => {
+        handleNext();
+      }, 3000); // 10 seconds
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [currentIndex]);
+      return () => clearInterval(interval); // Cleanup on unmount
+    }
+  }, [currentIndex, isPaused]);
 
   // Handle swipe gestures using react-swipeable
   const handlers = useSwipeable({
@@ -62,12 +64,22 @@ export default function ImageWithDescription() {
     );
   };
 
+  // Pause the auto-slide when hovering or touching
+  const handleMouseEnter = () => setIsPaused(true);
+  const handleMouseLeave = () => setIsPaused(false);
+  const handleTouchStart = () => setIsPaused(true);
+  const handleTouchEnd = () => setIsPaused(false);
+
   return (
     <motion.div
       className="w-full flex flex-col justify-start items-center text-center bg-[#1a1a1a] px-4 pt-8 lg:pt-16"
       animate={{ backgroundColor: currentVideo.bgColor }}
       transition={{ duration: 1.5 }}
       {...handlers} // Apply swipe handlers to the whole container
+      onMouseEnter={handleMouseEnter} // Pause on hover (desktop)
+      onMouseLeave={handleMouseLeave} // Resume on mouse leave (desktop)
+      onTouchStart={handleTouchStart} // Pause on touch (mobile)
+      onTouchEnd={handleTouchEnd} // Resume on touch end (mobile)
     >
       {/* Video and Navigation Dots */}
       <div className="relative w-full lg:w-[45vw] lg:h-[45vh] md:w-[35vw] md:h-[20vh] h-[54vw]">
