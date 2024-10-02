@@ -40,7 +40,7 @@ export default function ImageWithDescription() {
     if (!isPaused) {
       const interval = setInterval(() => {
         handleNext();
-      }, 3000); // 10 seconds
+      }, 10000); // 10 seconds
 
       return () => clearInterval(interval); // Cleanup on unmount
     }
