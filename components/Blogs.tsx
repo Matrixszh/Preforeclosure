@@ -33,13 +33,13 @@ const Blogs = () => {
       title: "Pre-foreclosure Saver",
       description:
         "Are you facing the daunting prospect of foreclosure? Don not panic. There are steps you can take to avoid losing your home. By understanding the pre-foreclosure process and also implementing effective strategies, you can significantly increase your chances of keeping your property.",
-      link: "https://www.facebook.com/share/fnWmP6VCjnXsfGCv/?mibextid=WC7FNe", // Link for this card
+      link: "https://www.linkedin.com/pulse/how-pre-foreclosure-saver-can-help-you-avoid-losing-your-nita-patel-ljoxf/?trackingId=sbzPB6PdSRy%2BThIDRGJIvg%3D%3D", // Link for this card
     },
     {
       title: "Avoid Losing Your Home",
       description:
         "Facing foreclosure is a distressing situation for any homeowner. The looming threat of losing your home due to missed mortgage payments can cause sleepless nights and anxiety about your future. That's where Pre-foreclosure Saver steps in, offering a lifeline to help you navigate the complexities of pre-foreclosure.",
-      link: "https://www.facebook.com/share/DgHSqCUZWNZcZono/?mibextid=WC7FNe", // Link for this card
+      link: "https://www.linkedin.com/pulse/ultimate-pre-foreclosure-saver-strategy-keep-your-home-nita-patel-mofnf/", // Link for this card
     },
   ];
 
