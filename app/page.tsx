@@ -68,24 +68,11 @@ export default function Home() {
       </div>
       <section
         id="home"
-        className="min-h-screen overflow-hidden bg-black flex flex-col items-center scroll-smooth"
+        className="min-h-screen b-black overflow-hidden bg-black flex flex-col items-center scroll-smooth"
+        style={{
+          backgroundImage: 'linear-gradient(135deg, #A97615, #000000, #000000, #A97615)',
+        }}
       >
-        <div className="absolute inset-0 h-full">
-          {/*img for mobile devices */}
-          <Image
-            src={mobile_bg_img}
-            alt="bg_image"
-            className="opacity-35 h-screen object-cover md:hidden  "
-            style={{ maxHeight: "800px" }}
-          />
-          {/*img for mobile larger devices */}
-          <Image
-            src={large_bg_img}
-            alt="bg_image"
-            className="opacity-35 h-screen object-cover hidden md:block  "
-            style={{ maxHeight: "800px" }}
-          />
-        </div>
         {/* <Header /> */}
         <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-auto shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[35vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-5">
           <div className="flex flex-col gap-6">

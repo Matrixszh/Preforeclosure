@@ -75,10 +75,14 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(135deg, #A97615, #000000, #000000, #A97615)', // Four-point gradient with black in the middle
+      },
     },
   },
-  plugins: [require("tailwindcss-animate"),
-    require('tailwindcss-textshadow')
+  plugins: [
+    require("tailwindcss-animate"),
+    require('tailwindcss-textshadow'),
   ],
 } satisfies Config
 
