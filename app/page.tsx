@@ -84,7 +84,7 @@ export default function Home() {
         {/* <Header /> */}
         <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-auto shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[35vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-5">
           <div className="flex flex-col gap-6">
-          <h1 className="md:text-8xl text-5xl text-white font-medium text-center md:text-left">
+          <h1 className="md:text-8xl text-4xl text-white font-medium text-center md:text-left">
   <span
     className="bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]"
     style={{
