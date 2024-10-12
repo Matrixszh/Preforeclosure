@@ -86,7 +86,7 @@ export default function Home() {
           <div className="flex flex-col gap-6">
           <h1 className="md:text-8xl text-4xl text-white font-medium text-center md:text-left">
   <span
-    className="bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+    className="bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]"
     style={{
       backgroundImage: 'linear-gradient(93deg,#AC9552 10%,#F6CA78 50%,#AC9552 100%)',  // Stronger top light gold to darker bottom gold
       backgroundClip: 'text',
