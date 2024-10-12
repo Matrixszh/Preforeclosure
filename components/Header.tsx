@@ -91,7 +91,7 @@ const Header = () => {
               lg:w-[110px] 
               w-[200px]
               drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]   /* Glow effect */
-              md:drop-shadow-none   /* Remove glow on medium and larger screens */
+                 /* Remove glow on medium and larger screens */
                     /* Optional pulsing effect for the glow */
                     /* Remove animation on medium and larger screens */
             "

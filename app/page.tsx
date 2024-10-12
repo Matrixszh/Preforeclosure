@@ -15,6 +15,8 @@ import { Router } from "next/router";
 import { useRouter } from "next/navigation";
 import mobile_bg_img from "../public/potrait.jpeg"
 import large_bg_img from "../public/bg_img2.jpg"
+import bg_img from "../public/bgimg.jpg"
+
 
 
 export default function Home() {
@@ -66,24 +68,42 @@ export default function Home() {
         </div>
         <Button_Component />
       </div>
-      <section
+            <section
         id="home"
-        className="min-h-screen b-black overflow-hidden bg-black flex flex-col items-center scroll-smooth"
-        style={{
-          backgroundImage: 'linear-gradient(135deg, #A97615, #000000, #000000, #A97615)',
-        }}
+        className="min-h-screen bg-black overflow-hidden flex flex-col items-center scroll-smooth"
       >
+        <div className="absolute inset-0 h-full">
+          {/*img for mobile devices */}
+          <Image
+            src={bg_img}            
+            alt="bg_image"
+            className="opacity-35 h-screen object-cover"
+            style={{ maxHeight: "800px" }}
+          />
+          </div>
         {/* <Header /> */}
         <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-auto shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[35vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-5">
           <div className="flex flex-col gap-6">
-            <h1 className="md:text-8xl text-4xl text-white font-medium text-center md:text-left">
-              <span className="bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] bg-clip-text text-[#FFDD7C] text-shadow">
-                Preforeclosures Queen
-              </span>
-            </h1>
-            <h2 className="md:text-4xl text-md text-white font-medium text-center md:text-left">
-              <span className="bg-white bg-clip-text text-transparent ">
-                From Pre-Foreclosures to Profit, Real Estate Starts Here!
+          <h1 className="md:text-8xl text-5xl text-white font-medium text-center md:text-left">
+  <span
+    className="bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+    style={{
+      backgroundImage: 'linear-gradient(93deg,#AC9552 10%,#F6CA78 50%,#AC9552 100%)',  // Stronger top light gold to darker bottom gold
+      backgroundClip: 'text',
+      color: 'transparent',
+      fontWeight: 'bold',
+      fontFamily: "'Playfair Display', serif",  // Apply Playfair Display font
+      textShadow: '0 0 15px rgba(0, 0, 0, 0.6)',  // Slightly darker shadow for depth
+    }}
+  >
+    PREFORECLOSURES QUEEN
+  </span>
+</h1>
+
+
+            <h2 className="md:text-4xl text-xl text-white font-medium text-center md:text-left">
+              <span className="bg-white bg-clip-text text-transparent">
+                Unlock exclusive strategies to dominate off-market deals and scale your real estate portfolio
               </span>
             </h2>
           </div>
@@ -93,15 +113,17 @@ export default function Home() {
                 onClick={() => {
                   router.push("#form");
                 }}
-                className="relative z-10 lg:text-md md:text-lg text-sm px-[80px] md:px-[80px] lg:px-0 "
+                className="relative z-10 lg:text-md md:text-lg text-sm px-[80px] md:px-[80px] lg:px-0"
               >
-                LETS CONNECT
+                JOIN THE MOVEMENT
               </span>
               <div className="absolute inset-0 bg-[linear-gradient(93deg,#AC9552_40%,#F6CA78_70%,#AC9552_100%)] group-hover:opacity-0 transition-opacity duration-300"></div>
             </button>
           </div>
         </div>
       </section>
+
+
 
       <section className=" relative bg-white min-h-screen flex items-center justify-center flex-col">
         <div
