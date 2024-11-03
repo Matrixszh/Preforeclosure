@@ -1,6 +1,7 @@
+"use client";
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
 import "dotenv/config";
@@ -11,19 +12,22 @@ type FormFields = {
   email: string;
   description: string;
 };
+
 const AppointmentForm = () => {
   const template = process.env.NEXT_PUBLIC_TEMPLATE_ID;
   const service = process.env.NEXT_PUBLIC_SERVICE_ID;
   const key = process.env.NEXT_PUBLIC_USER_ID;
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm({
+  } = useForm<FormFields>({
     defaultValues: {
       name: "",
       number: "",
@@ -37,12 +41,12 @@ const AppointmentForm = () => {
       .send(service!, template!, data, key)
       .then((response) => {
         reset();
-        console.log("Form data:", data);
         toast.success("Form Submitted Successfully!");
+        console.log("Form data:", data);
       })
       .catch((error) => {
-        console.error("FAILED...", error);
         toast.error("Form Submission Failed!");
+        console.error("FAILED...", error);
       });
   };
 
@@ -123,6 +127,9 @@ const AppointmentForm = () => {
           Contact Us
         </button>
       </form>
+
+      {/* Toast container for notifications */}
+      <ToastContainer />
     </>
   );
 };

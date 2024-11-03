@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 
+
 @media (max-width: 464px) {
   .card-item {
     transition: all 0.3s ease;
