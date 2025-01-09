@@ -88,7 +88,7 @@ const Header = () => {
               hover:cursor-pointer
               mt-14
               lg:mt-2
-              lg:w-[110px] 
+              lg:w-[180px] 
               w-[200px]
               drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]   /* Glow effect */
                  /* Remove glow on medium and larger screens */
@@ -155,7 +155,7 @@ const Header = () => {
           </div>
           <div className="p-4">
             <button
-              className="w-full bg-[#D72323] border-[1px] border-gray-300 py-3 rounded-xl text-lg font-medium text-white font-bold hover:border-[#D72323] hover:bg-white hover:text-[#D72323] transition duration-300"
+              className="w-full bg-[#D72323] border-[1px] border-gray-300 py-3 rounded-xl text-lg font-medium text-white hover:border-[#D72323] hover:bg-white hover:text-[#D72323] transition duration-300"
               onClick={() => {
                 toggleMenu();
                 SectionScroll("pricing");

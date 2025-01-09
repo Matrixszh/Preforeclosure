@@ -13,11 +13,9 @@ import Workshops from "@/components/Workshops";
 import AppointmentForm from "@/components/AppointmentForm";
 import { Router } from "next/router";
 import { useRouter } from "next/navigation";
-import mobile_bg_img from "../public/potrait.jpeg"
-import large_bg_img from "../public/bg_img2.jpg"
-import bg_img from "../public/bgimg.jpg"
-
-
+import mobile_bg_img from "../public/potrait.jpeg";
+import large_bg_img from "../public/bg_img2.jpg";
+import bg_img from "../public/bgimg.jpg";
 
 export default function Home() {
   const [scrolled, setIsScrolled] = useState(false);
@@ -68,42 +66,43 @@ export default function Home() {
         </div>
         <Button_Component />
       </div>
-            <section
+      <section
         id="home"
         className="min-h-screen bg-black overflow-hidden flex flex-col items-center scroll-smooth"
       >
-        <div className="absolute inset-0 h-full">
+        <div className="absolute inset-0 h-full md:hidden">
           {/*img for mobile devices */}
           <Image
-            src={bg_img}            
+            src={bg_img}
             alt="bg_image"
             className="opacity-35 h-screen object-cover"
             style={{ maxHeight: "800px" }}
           />
-          </div>
+        </div>
         {/* <Header /> */}
         <div className="relative w-full px-4 md:px-0 lg:w-[54vw] md:w-[80vw] min-h-auto shrink-0 flex flex-col lg:items-start items-center justify-between z-10 lg:mt-[35vh] mt-[30vh] lg:ml-[5.313vw] mx-auto gap-[22vh] lg:gap-5">
           <div className="flex flex-col gap-6">
-          <h1 className="md:text-8xl text-4xl text-white font-medium text-center md:text-left">
-  <span
-    className="bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]"
-    style={{
-      backgroundImage: 'linear-gradient(93deg,#AC9552 10%,#F6CA78 50%,#AC9552 100%)',  // Stronger top light gold to darker bottom gold
-      backgroundClip: 'text',
-      color: 'transparent',
-      fontWeight: 'bold',
-      fontFamily: "'Playfair Display', serif",  // Apply Playfair Display font
-      textShadow: '0 0 15px rgba(0, 0, 0, 0.6)',  // Slightly darker shadow for depth
-    }}
-  >
-    PREFORECLOSURES QUEEN
-  </span>
-</h1>
-
+            <h1 className="md:text-8xl text-4xl text-white font-medium text-center md:text-left">
+              <span
+                className="bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(93deg,#AC9552 10%,#F6CA78 50%,#AC9552 100%)", // Stronger top light gold to darker bottom gold
+                  backgroundClip: "text",
+                  color: "transparent",
+                  fontWeight: "bold",
+                  fontFamily: "'Playfair Display', serif", // Apply Playfair Display font
+                  textShadow: "0 0 15px rgba(0, 0, 0, 0.6)", // Slightly darker shadow for depth
+                }}
+              >
+                PREFORECLOSURES QUEEN
+              </span>
+            </h1>
 
             <h2 className="md:text-4xl text-xl text-white font-medium text-center md:text-left">
               <span className="bg-white bg-clip-text text-transparent">
-                Unlock exclusive strategies to dominate off-market deals and scale your real estate portfolio
+                Unlock exclusive strategies to dominate off-market deals and
+                scale your real estate portfolio
               </span>
             </h2>
           </div>
@@ -122,8 +121,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
 
       <section className=" relative bg-white min-h-screen flex items-center justify-center flex-col">
         <div
