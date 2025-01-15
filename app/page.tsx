@@ -95,7 +95,7 @@ export default function Home() {
                   textShadow: "0 0 15px rgba(0, 0, 0, 0.6)", // Slightly darker shadow for depth
                 }}
               >
-                PREFORECLOSURES QUEEN
+                NITA PATEL
               </span>
             </h1>
 
