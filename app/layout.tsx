@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import logo from "../public/logo.png";
 import "./globals.css";
-import { Playfair_Display } from "next/font/google";
-import Head from "next/head";
 import Header from "@/components/Header";
 import { Poppins } from "next/font/google";
 
